@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Master Solar Deals</title>
+<style>
+body{font-family:Arial;background:#111;color:#fff;margin:0}header{background:#ff7a00;padding:18px;text-align:center;font-size:28px;font-weight:bold}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;padding:16px}
+.card{background:#222;border-radius:12px;overflow:hidden}.card img{width:100%;display:block;cursor:pointer}.card h3{text-align:center}
+#viewer{display:none;position:fixed;inset:0;background:#000d;justify-content:center;align-items:center}#viewer img{max-width:95%;max-height:95%}
+.close{position:absolute;top:15px;right:20px;font-size:32px;color:#fff;cursor:pointer}
+</style></head><body>
+<header>MASTER SOLAR</header>
+<div class="grid">
+<div class="card"><h3>deal 1 and 2</h3><img src="https://i.postimg.cc/FRTqR7qk/brochure-jpg.jpg" onclick="v(this.src)"></div>
+<div class="card"><h3>Deal 3 and 4</h3><img src="https://i.postimg.cc/FRTqR7qk/brochure-jpg.jpg" onclick="v(this.src)"></div>
+</div>
+<div id="viewer" onclick="this.style.display='none'"><span class="close">&times;</span><img id="big"></div>
+<script>function v(s){big.src=s;viewer.style.display='flex';}</script>
+</body></html>
